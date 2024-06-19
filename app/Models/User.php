@@ -47,6 +47,9 @@ class User extends Authenticatable
         ];
     }
 
+    // public function nextOfKin():HasOne {
+    //     return $this->hasOne(NextOfKin::class);
+    // }
 
     public function nextOfKin():HasMany {
         return $this->hasMany(NextOfKin::class);
